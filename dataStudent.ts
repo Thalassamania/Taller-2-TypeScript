@@ -1,0 +1,3 @@
+import { Student } from './student.js';
+
+export const dataStudent  = new Student (201923748, 1000806161, 20, 'Crr 12 # 45 - 45', 31928747);

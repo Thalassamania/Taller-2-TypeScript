@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+</head>
+
+<body>
+    <script type="module" src="./scripts/course.js"></script>
+    <script type="module" src="./scripts/dataCourses.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1>Juan Alejandro Charry Gavilán</h1>
+                <img class="img-fluid max-width: 100% height: auto"
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipground.com%2Fimages%2Fwhite-profile-icon-clipart-2.png&f=1&nofb=1"
+                    alt="Avatar" id=imagen>
+                <table class="tableSquare">
+                    <thead>
+                        <tr>
+                            <th>Datos Personales</th>
+                        </tr>
+                    </thead>
+                    <tbody id="students">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-4">
+                <h2>Cursos Actuales</h2>
+                <form style="margin:10px;">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                        </div>
+                        <div class="col">
+                            <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                        </div>
+                    </div>
+                </form>
+                <form style="margin:10px;">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="number" class="form-control" id="search-box-number-min"
+                                placeholder="min">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" id="search-box-number-max"
+                                placeholder="max">
+                        </div>
+                        <div class="col">
+                            <button type="button" id="button-filterByCredits" class="btn btn-success">Aplicar</button>
+                        </div>
+                    </div>
+                </form>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Curso</th>
+                            <th>Profesor</th>
+                            <th>Créditos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="courses">
+                    </tbody>
+                    </tbody>
+                </table>
+                <b>Total Créditos: <b id="total-credits"></b></b>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>
