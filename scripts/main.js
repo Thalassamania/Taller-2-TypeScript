@@ -69,4 +69,4 @@ function clearCoursesInTable() {
     }
 }
 btnfilterByName.onclick = function () { return applyFilterByName(); };
-btnfilterByName.onclick = function () { return applyFilterByNumber(); };
+btnfilterByCredits.onclick = function () { return applyFilterByNumber(); };

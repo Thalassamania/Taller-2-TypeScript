@@ -13,13 +13,14 @@ const inputSearchBoxMax: HTMLInputElement = <HTMLInputElement> document.getEleme
 const totalCreditElm: HTMLElement = document.getElementById("total-credits")!;
 
 
+
 btnfilterByName.onclick = () => applyFilterByName();
 btnfilterByCredits.onclick = () => applyFilterByNumber();
 
 renderCoursesInTable(dataCourses);
 renderStudentsInTable(dataStudent);
 
-totalCreditElm.innerHTML = `${getTotalCredits(dataCourses)}`
+totalCreditElm.innerHTML = `${getTotalCredits(dataCourses)}` ;
 
 
 function renderCoursesInTable(courses: Course[]): void {
@@ -113,6 +114,6 @@ function clearCoursesInTable() {
 }
 
 btnfilterByName.onclick = () => applyFilterByName();
-btnfilterByName.onclick = () => applyFilterByNumber();
+btnfilterByCredits.onclick = () => applyFilterByNumber();
 
 
